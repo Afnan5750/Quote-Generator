@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+}
+
+body {
+    background-color: #232424;
+}
+
+.quote-Box {
+    background: white;
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.15);
+}
+
+.quote-Box h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.quote-Box h2::after {
+    content: '';
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    background: rgb(23, 124, 229);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.quote-Box blockquote {
+    font-size: 26px;
+    min-height: 110px;
+}
+
+.quote-Box blockquote::before,
+.quote-Box blockquote::after {
+    content: '"';
+}
+
+.quote-Box span {
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+}
+
+.quote-Box span::before {
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: rgb(23, 124, 229);
+    position: absolute;
+    top: 50%;
+    left: -30%;
+}
+
+.quote-Box div {
+    width: 100%;
+    margin-top: 115px;
+    display: flex;
+    justify-content: center;
+}
+
+.quote-Box button {
+    background: transparent;
+    color: black;
+    border-radius: 25px;
+    border: 2px solid rgb(23, 124, 229);
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.quote-Box button:hover {
+    background: rgb(23, 124, 229);
+    color: white;
+}
+
+.quote-Box button:nth-child(4) {
+    background: rgb(23, 124, 229);
+    color: white;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.quote-Box button::after {
+    content: '';
+    width: 82%;
+    height: 1px;
+    background: rgb(23, 124, 229);
+    position: absolute;
+    top: 70%;
+    left: 8%;
+}
+
+.quote-Box button i {
+    margin-right: 5px;
+}
+
+/* .quote-Box button:nth-child(4):hover{
+    background: transparent;
+    color: black;
+} */
+

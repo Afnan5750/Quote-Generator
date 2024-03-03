@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b3f38c3fea.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/Quote.css">
+    <title>Quote Generator</title>
+</head>
+
+<body>
+    <div class="quote-Box">
+        <h2>Quote of the Day</h2>
+        <blockquote id="quote">Loading...</blockquote>
+        <span id="author">Loading...</span>
+        <div>
+            <button onclick="speak()"> <i class="fa-solid fa-volume-high"></i> Speak</button>
+            <button onclick="copy()" id="copyButton"><i class="fa-regular fa-copy"></i> Copy</button>
+            <button onclick="tweet()"><i class="fa-brands fa-x-twitter"></i> Tweet</button>
+            <button onclick="getQuote(api_url)">New Quote</button>
+        </div>
+    </div>
+
+
+    <script src="/Quote.js"></script>
+</body>
+
+</html>
